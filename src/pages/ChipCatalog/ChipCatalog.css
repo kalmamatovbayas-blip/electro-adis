@@ -1,0 +1,269 @@
+.chip-page{
+    background:#081B33;
+    min-height:100vh;
+    padding:60px 0;
+}
+
+.chip-container{
+    width:90%;
+    max-width:1300px;
+    margin:0 auto;
+}
+
+.chip-back-btn{
+    display:inline-block;
+    margin-bottom:40px;
+    color:#FFC933;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.chip-back-btn:hover{
+    color:#fff;
+}
+
+.chip-hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    margin-bottom:70px;
+    flex-wrap:wrap;
+}
+
+.chip-left{
+    flex:1;
+}
+
+.chip-left h1{
+    color:#fff;
+    font-size:52px;
+    margin-bottom:15px;
+}
+
+.chip-left p{
+    color:#ddd;
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.chip-left img{
+    width:100%;
+    max-width:650px;
+    border-radius:20px;
+    border:3px solid #FFC933;
+    object-fit:cover;
+}
+
+.chip-right{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.chip-price-card{
+    width:100%;
+    max-width:420px;
+    background:#102B50;
+    border:2px solid #FFC933;
+    border-radius:20px;
+    padding:35px;
+}
+
+.chip-price-card h2{
+    color:#FFC933;
+    font-size:42px;
+    margin-bottom:25px;
+}
+
+.chip-price-card p{
+    color:#fff;
+    font-size:19px;
+    margin-bottom:15px;
+}
+
+.chip-price-card button{
+    width:100%;
+    height:55px;
+    margin-top:25px;
+    border:none;
+    border-radius:10px;
+    background:#FFC933;
+    color:#081B33;
+    font-size:18px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.chip-price-card button:hover{
+    background:#ffb700;
+    transform:translateY(-3px);
+}
+
+.chip-info-box{
+    background:#102B50;
+    border:2px solid #FFC933;
+    border-radius:20px;
+    padding:35px;
+    margin-bottom:35px;
+}
+
+.chip-info-box h2{
+    color:#FFC933;
+    font-size:34px;
+    margin-bottom:20px;
+}
+
+.chip-info-box p{
+    color:#ddd;
+    font-size:18px;
+    line-height:32px;
+}
+
+.chip-info-box ul{
+    margin-top:20px;
+    padding-left:20px;
+}
+
+.chip-info-box li{
+    color:#fff;
+    font-size:18px;
+    margin-bottom:15px;
+}
+
+.chip-lesson-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.chip-lesson-grid div{
+    background:#081B33;
+    color:#fff;
+    padding:20px;
+    border-radius:12px;
+    border:1px solid #FFC933;
+    text-align:center;
+    font-size:18px;
+    transition:.3s;
+}
+
+.chip-lesson-grid div:hover{
+    background:#15365F;
+    transform:translateY(-5px);
+}
+
+.chip-program{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:25px;
+}
+
+.chip-program-card{
+    background:#081B33;
+    border:1px solid #FFC933;
+    border-radius:15px;
+    padding:25px;
+}
+
+.chip-program-card h3{
+    color:#FFC933;
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.chip-program-card p{
+    color:#fff;
+    line-height:28px;
+}
+
+.chip-gallery{
+    margin-top:60px;
+}
+
+.chip-gallery h2{
+    color:#FFC933;
+    font-size:34px;
+    margin-bottom:30px;
+}
+
+.chip-gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.chip-gallery-grid img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:18px;
+    border:2px solid #FFC933;
+    transition:.3s;
+}
+
+.chip-gallery-grid img:hover{
+    transform:scale(1.03);
+}
+
+@media(max-width:992px){
+
+.chip-hero{
+    flex-direction:column;
+}
+
+.chip-left h1{
+    font-size:40px;
+}
+
+.chip-left p{
+    font-size:18px;
+}
+
+.chip-price-card{
+    max-width:100%;
+}
+
+}
+
+@media(max-width:768px){
+
+.chip-page{
+    padding:40px 0;
+}
+
+.chip-left h1{
+    font-size:32px;
+}
+
+.chip-left p{
+    font-size:16px;
+}
+
+.chip-info-box{
+    padding:25px;
+}
+
+.chip-info-box h2{
+    font-size:26px;
+}
+
+.chip-info-box p,
+.chip-info-box li{
+    font-size:16px;
+    line-height:28px;
+}
+
+.chip-price-card h2{
+    font-size:34px;
+}
+
+.chip-gallery-grid img{
+    height:220px;
+}
+
+}

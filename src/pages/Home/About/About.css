@@ -1,0 +1,181 @@
+.features{
+    padding:100px 0;
+    background:#07172D;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.title h2{
+    color:#fff;
+    font-size:46px;
+    margin-bottom:15px;
+}
+
+.title p{
+    color:#b8c7d8;
+    font-size:18px;
+}
+
+.features-grid{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.feature-card{
+    background:#102746;
+    padding:40px 30px;
+    border-radius:20px;
+    text-align:center;
+    border:1px solid rgba(255,255,255,.08);
+    transition:.35s;
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+    border-color:#FFC933;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+.icon{
+    color:#FFC933;
+    font-size:55px;
+    margin-bottom:25px;
+}
+
+.feature-card h3{
+    color:#fff;
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.feature-card p{
+    color:#c7d0dd;
+    line-height:28px;
+}
+
+/* ======================
+   Laptop
+====================== */
+
+@media(max-width:1200px){
+
+.features-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/* ======================
+   Tablet
+====================== */
+
+@media(max-width:992px){
+
+.features{
+    padding:80px 0;
+}
+
+.title{
+    margin-bottom:50px;
+}
+
+.title h2{
+    font-size:38px;
+}
+
+.title p{
+    font-size:17px;
+}
+
+.features-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.feature-card{
+    padding:35px 25px;
+}
+
+}
+
+/* ======================
+   Mobile
+====================== */
+
+@media(max-width:768px){
+
+.features{
+    padding:60px 0;
+}
+
+.features-grid{
+    grid-template-columns:1fr;
+}
+
+.title h2{
+    font-size:30px;
+}
+
+.title p{
+    font-size:16px;
+}
+
+.icon{
+    font-size:48px;
+}
+
+.feature-card h3{
+    font-size:22px;
+}
+
+.feature-card p{
+    font-size:15px;
+    line-height:26px;
+}
+
+}
+
+/* ======================
+   Small Mobile
+====================== */
+
+@media(max-width:480px){
+
+.features{
+    padding:50px 0;
+}
+
+.title h2{
+    font-size:26px;
+}
+
+.title p{
+    font-size:14px;
+}
+
+.feature-card{
+    padding:25px 20px;
+}
+
+.icon{
+    font-size:42px;
+}
+
+.feature-card h3{
+    font-size:20px;
+}
+
+.feature-card p{
+    font-size:14px;
+    line-height:24px;
+}
+
+}

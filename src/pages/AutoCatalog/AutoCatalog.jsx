@@ -1,10 +1,10 @@
 import "./AutoCatalog.css";
 import { Link, useOutletContext } from "react-router";
 
-import auto from "../../assets/auto.png";
-import gallery1 from "../../assets/gallery1.png";
-import gallery3 from "../../assets/gallery3.png";
-import gallery5 from "../../assets/gallery5.png";
+import auto from "../../assets/electrovideo.mp4";
+import gallery1 from "../../assets/STR.png";
+import gallery3 from "../../assets/STENT.png";
+import gallery5 from "../../assets/PRACTICA.png";
 import qr from "../../assets/qrcode.svg";
 
 const AutoCatalog = () => {
@@ -30,7 +30,15 @@ const AutoCatalog = () => {
               Кесип үйрөн — Келечегиңди бүгүн башта!
             </p>
 
-            <img src={auto} alt="Авто Электрик" />
+             <div className="gallery-card">
+              <video
+                controls
+                preload="metadata"
+                className="gallery-video"
+              >
+                <source src={auto} type="video/mp4" />
+              </video>
+            </div>
 
           </div>
 

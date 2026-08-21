@@ -1,269 +1,819 @@
 .elektro-page{
+
     background:#081B33;
+
     min-height:100vh;
+
     padding:60px 0;
+
 }
+
+
 
 .elektro-container{
+
     width:90%;
+
     max-width:1300px;
-    margin:0 auto;
+
+    margin:auto;
+
 }
+
+
+
+/* BACK BUTTON */
+
 
 .elektro-back-btn{
+
     display:inline-block;
+
     margin-bottom:40px;
+
     color:#FFC933;
+
     font-size:18px;
+
     font-weight:600;
+
+    text-decoration:none;
+
     transition:.3s;
+
 }
+
+
 
 .elektro-back-btn:hover{
+
     color:#fff;
+
 }
+
+
+
+/* HERO */
+
 
 .elektro-hero{
+
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
+
     gap:60px;
+
     margin-bottom:70px;
-    flex-wrap:wrap;
+
 }
+
+
 
 .elektro-left{
+
     flex:1;
+
 }
+
+
 
 .elektro-left h1{
+
     color:#fff;
+
     font-size:52px;
+
     margin-bottom:15px;
+
 }
+
+
 
 .elektro-left p{
+
     color:#ddd;
+
     font-size:22px;
+
     margin-bottom:30px;
+
 }
+
+
 
 .elektro-left img{
+
     width:100%;
+
     max-width:650px;
+
     border-radius:20px;
+
     border:3px solid #FFC933;
+
     object-fit:cover;
+
 }
+
+
+
+/* PRICE */
+
 
 .elektro-right{
+
     flex:1;
+
     display:flex;
+
     justify-content:center;
+
 }
+
+
 
 .elektro-price-card{
+
     width:100%;
+
     max-width:420px;
+
     background:#102B50;
+
     border:2px solid #FFC933;
+
     border-radius:20px;
+
     padding:35px;
+
 }
+
+
 
 .elektro-price-card h2{
+
     color:#FFC933;
+
     font-size:42px;
+
     margin-bottom:25px;
+
 }
+
+
 
 .elektro-price-card p{
+
     color:#fff;
+
     font-size:19px;
+
     margin-bottom:15px;
+
 }
+
+
 
 .elektro-price-card button{
+
     width:100%;
+
     height:55px;
+
     margin-top:25px;
+
     border:none;
+
     border-radius:10px;
+
     background:#FFC933;
+
     color:#081B33;
+
     font-size:18px;
+
     font-weight:700;
+
     cursor:pointer;
+
     transition:.3s;
+
 }
+
+
 
 .elektro-price-card button:hover{
+
     background:#ffb700;
+
     transform:translateY(-3px);
+
 }
+
+
+
+/* INFO */
+
 
 .elektro-info-box{
+
     background:#102B50;
+
     border:2px solid #FFC933;
+
     border-radius:20px;
+
     padding:35px;
+
     margin-bottom:35px;
+
 }
+
+
 
 .elektro-info-box h2{
+
     color:#FFC933;
+
     font-size:34px;
+
     margin-bottom:20px;
+
 }
+
+
 
 .elektro-info-box p{
+
     color:#ddd;
+
     font-size:18px;
+
     line-height:32px;
+
 }
+
+
 
 .elektro-info-box ul{
+
     margin-top:20px;
+
     padding-left:20px;
+
 }
+
+
 
 .elektro-info-box li{
+
     color:#fff;
+
     font-size:18px;
+
     margin-bottom:15px;
+
 }
+
+
+
+/* LESSON GRID */
+
 
 .elektro-lesson-grid{
+
     display:grid;
+
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
     gap:20px;
+
     margin-top:20px;
+
 }
+
+
 
 .elektro-lesson-grid div{
+
     background:#081B33;
+
     color:#fff;
+
     padding:20px;
+
     border-radius:12px;
+
     border:1px solid #FFC933;
+
     text-align:center;
+
     font-size:18px;
+
     transition:.3s;
+
 }
+
+
 
 .elektro-lesson-grid div:hover{
+
     background:#15365F;
+
     transform:translateY(-5px);
+
 }
+/* ==========================
+        PROGRAM
+========================== */
+
 
 .elektro-program{
+
     display:grid;
+
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
     gap:25px;
+
     margin-top:25px;
+
 }
+
+
 
 .elektro-program-card{
+
     background:#081B33;
+
     border:1px solid #FFC933;
+
     border-radius:15px;
+
     padding:25px;
+
+    transition:.3s;
+
 }
+
+
+
+.elektro-program-card:hover{
+
+    transform:translateY(-5px);
+
+    background:#15365F;
+
+}
+
+
 
 .elektro-program-card h3{
+
     color:#FFC933;
-    margin-bottom:15px;
+
     font-size:24px;
+
+    margin-bottom:15px;
+
 }
+
+
 
 .elektro-program-card p{
+
     color:#fff;
+
     line-height:28px;
+
 }
+
+
+
+
+
+/* ==========================
+        GALLERY
+========================== */
+
 
 .elektro-gallery{
+
     margin-top:60px;
+
 }
+
+
 
 .elektro-gallery h2{
+
     color:#FFC933;
+
     font-size:34px;
+
     margin-bottom:30px;
+
 }
+
+
 
 .elektro-gallery-grid{
+
     display:grid;
+
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
     gap:25px;
+
 }
+
+
 
 .elektro-gallery-grid img{
+
     width:100%;
+
     height:250px;
+
     object-fit:cover;
+
     border-radius:18px;
+
     border:2px solid #FFC933;
+
     transition:.3s;
+
 }
 
+
+
 .elektro-gallery-grid img:hover{
+
     transform:scale(1.03);
+
 }
+
+
+
+/* VIDEO */
+
+
+.gallery-card{
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+}
+
+
+
+.gallery-video{
+
+    width:100%;
+
+    height:420px;
+
+    object-fit:cover;
+
+    display:block;
+
+    border-radius:24px;
+
+}
+
+
+
+
+
+/* ==========================
+        TABLET
+========================== */
+
 
 @media(max-width:992px){
 
+
 .elektro-hero{
+
     flex-direction:column;
+
+    text-align:center;
+
 }
+
+
 
 .elektro-left h1{
+
     font-size:40px;
+
 }
+
+
 
 .elektro-left p{
+
     font-size:18px;
+
 }
+
+
 
 .elektro-price-card{
+
     max-width:100%;
-}
 
 }
+
+
+
+.gallery-video{
+
+    height:350px;
+
+}
+
+
+}
+
+
+
+
+
+/* ==========================
+        MOBILE
+========================== */
+
 
 @media(max-width:768px){
 
+
 .elektro-page{
+
     padding:40px 0;
+
 }
+
+
+
+.elektro-container{
+
+    width:92%;
+
+}
+
+
+
+.elektro-back-btn{
+
+    font-size:16px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.elektro-hero{
+
+    gap:35px;
+
+    margin-bottom:45px;
+
+}
+
+
 
 .elektro-left h1{
+
     font-size:32px;
+
+    line-height:42px;
+
 }
+
+
 
 .elektro-left p{
+
     font-size:16px;
+
+    line-height:27px;
+
 }
+
+
+
+.elektro-left img{
+
+    border-radius:15px;
+
+    border-width:2px;
+
+}
+
+
+
+/* PRICE */
+
+
+.elektro-price-card{
+
+    padding:25px;
+
+    border-radius:18px;
+
+}
+
+
+
+.elektro-price-card h2{
+
+    font-size:34px;
+
+}
+
+
+
+.elektro-price-card p{
+
+    font-size:16px;
+
+}
+
+
+
+.elektro-price-card button{
+
+    height:52px;
+
+}
+
+
+
+/* INFO */
+
 
 .elektro-info-box{
+
     padding:25px;
+
 }
 
+
+
 .elektro-info-box h2{
+
     font-size:26px;
+
 }
+
+
 
 .elektro-info-box p,
 .elektro-info-box li{
+
     font-size:16px;
+
     line-height:28px;
+
 }
 
-.elektro-price-card h2{
-    font-size:34px;
+
+
+/* GALLERY */
+
+
+.elektro-gallery{
+
+    margin-top:40px;
+
 }
+
+
+
+.elektro-gallery h2{
+
+    font-size:28px;
+
+}
+
+
+
+.elektro-gallery-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
 
 .elektro-gallery-grid img{
+
     height:220px;
+
 }
+
+
+
+.gallery-video{
+
+    height:250px;
+
+    border-radius:18px;
+
+}
+
+
+}
+
+
+
+
+
+/* ==========================
+       SMALL PHONE
+========================== */
+
+
+@media(max-width:480px){
+
+
+.elektro-container{
+
+    width:90%;
+
+}
+
+
+
+.elektro-left h1{
+
+    font-size:28px;
+
+    line-height:38px;
+
+}
+
+
+
+.elektro-left p{
+
+    font-size:15px;
+
+}
+
+
+
+.elektro-price-card{
+
+    padding:20px;
+
+}
+
+
+
+.elektro-price-card h2{
+
+    font-size:30px;
+
+}
+
+
+
+.elektro-info-box{
+
+    padding:20px;
+
+}
+
+
+
+.elektro-info-box h2{
+
+    font-size:23px;
+
+}
+
+
+
+.elektro-gallery-grid img{
+
+    height:200px;
+
+}
+
+
+
+.gallery-video{
+
+    height:220px;
+
+}
+
 
 }

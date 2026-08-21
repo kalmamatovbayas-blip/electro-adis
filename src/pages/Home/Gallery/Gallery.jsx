@@ -1,8 +1,8 @@
 import "./Gallery.css";
 
-import img1 from "../../../assets/adis1.jpeg";
-import img3 from "../../../assets/adis2.jpeg";
-import img5 from "../../../assets/adis3.jpeg";
+import img1 from "../../../assets/adis1.png";
+import img3 from "../../../assets/adis2.png";
+import img5 from "../../../assets/adis3.png";
 
 import video1 from "../../../assets/video1.mp4";
 import video2 from "../../../assets/video2.mp4";

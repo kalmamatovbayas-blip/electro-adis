@@ -1,5 +1,5 @@
 import React from "react";
-import hero from "../../../assets/hero.png";
+import hero from "../../../assets/header.png";
 import "./Aside.css";
 
 const Aside = ({ openModal }) => {
@@ -9,16 +9,24 @@ const Aside = ({ openModal }) => {
 
         <div className="hero-left">
 
+          <span className="hero-badge">
+            ⚡ Электро Адис окуу борбору
+          </span>
+
           <h1>
-            Биздин миссия: <br />
+            Биздин миссия:
+            <br />
             <span>
-              Кыска убакыта мыкты кесипкөй адистерди даярдап чыгаруу
+              Кыска убакытта мыкты
+              кесипкөй адистерди
+              даярдап чыгаруу
             </span>
           </h1>
 
           <p>
-            Авто Электрик, Электро Монтаж жана Чип-Тюнинг боюнча
-            практикалык окуу борбору.
+            Авто Электрик, Электро Монтаж жана
+            Чип-Тюнинг боюнча заманбап теориялык
+            жана практикалык окуу борбору.
           </p>
 
           <div className="hero-buttons">
@@ -27,30 +35,33 @@ const Aside = ({ openModal }) => {
               className="btn-yellow"
               onClick={openModal}
             >
-              Катталуу
+              Азыр катталуу
             </button>
 
-            <a href="#courses" className="btn-outline">
-              Курстар
+            <a
+              href="#courses"
+              className="btn-outline"
+            >
+              Курстарды көрүү
             </a>
 
           </div>
 
           <div className="hero-info">
 
-            <div>
+            <div className="hero-card">
               <h2>3000+</h2>
               <span>Бүтүрүүчү</span>
             </div>
 
-            <div>
+            <div className="hero-card">
               <h2>10+</h2>
               <span>Жылдык тажрыйба</span>
             </div>
 
-            <div>
+            <div className="hero-card">
               <h2>80%</h2>
-              <span>Практика</span>
+              <span>Практикалык окуу</span>
             </div>
 
           </div>
@@ -58,7 +69,13 @@ const Aside = ({ openModal }) => {
         </div>
 
         <div className="hero-right">
-          <img src={hero} alt="Hero" />
+
+          <img
+            src={hero}
+            alt="Электро Адис"
+            className="hero-image"
+          />
+
         </div>
 
       </div>

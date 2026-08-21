@@ -1,2 +1,158 @@
 
 
+/* ==========================
+   GLOBAL APP CSS
+========================== */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Inter", sans-serif;
+}
+
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+
+body{
+
+    background:#081B33;
+
+    overflow-x:hidden;
+
+}
+
+
+
+a{
+
+    text-decoration:none;
+
+}
+
+
+
+button,
+input,
+textarea,
+select{
+
+    font-family:inherit;
+
+}
+
+
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+
+
+/* Remove default */
+
+ul{
+
+    list-style:none;
+
+}
+
+
+
+/* Selection */
+
+::selection{
+
+    background:#FFC933;
+
+    color:#07172D;
+
+}
+
+
+
+/* Scroll bar */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+
+::-webkit-scrollbar-track{
+
+    background:#07172D;
+
+}
+
+
+::-webkit-scrollbar-thumb{
+
+    background:#FFC933;
+
+    border-radius:10px;
+
+}
+
+
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#FFD84D;
+
+}
+
+
+
+
+
+/* Container global */
+
+
+.container{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+}
+
+
+
+
+/* Mobile container */
+
+
+@media(max-width:768px){
+
+    .container{
+
+        width:92%;
+
+    }
+
+}
+
+
+@media(max-width:480px){
+
+    .container{
+
+        width:94%;
+
+    }
+
+}

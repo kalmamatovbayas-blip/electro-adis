@@ -1,127 +1,501 @@
 .about{
+
     padding:120px 0;
+
     background:#081B33;
+
 }
 
+
+
 .about-container{
+
     width:90%;
+
     max-width:1300px;
+
     margin:auto;
 
     display:flex;
+
     align-items:center;
+
     justify-content:space-between;
+
     gap:70px;
+
 }
+
+
+
+
+
+/* IMAGE */
 
 .about-image{
+
     flex:1;
+
 }
+
+
 
 .about-image img{
+
     width:100%;
-    border-radius:20px;
+
+    border-radius:25px;
+
+    object-fit:cover;
+
+    border:2px solid rgba(255,255,255,.08);
+
 }
+
+
+
+
+
+/* CONTENT */
 
 .about-content{
+
     flex:1;
+
 }
+
+
 
 .about-content span{
+
     color:#FFC933;
+
     font-size:18px;
+
     font-weight:600;
+
 }
+
+
 
 .about-content h2{
-    color:white;
+
+    color:#fff;
+
     font-size:48px;
+
+    line-height:60px;
+
     margin:20px 0;
+
 }
+
+
 
 .about-content p{
+
     color:#cdd7e5;
+
+    font-size:17px;
+
     line-height:32px;
+
     margin-bottom:35px;
+
 }
+
+
+
+
+
+/* BOXES */
+
 
 .about-boxes{
+
     display:flex;
+
     gap:25px;
+
     margin-bottom:40px;
+
 }
+
+
 
 .box{
+
     flex:1;
+
     background:#102746;
+
     padding:25px;
-    border-radius:15px;
+
+    border-radius:18px;
+
     text-align:center;
+
     border:1px solid rgba(255,255,255,.08);
+
+    transition:.3s;
+
 }
+
+
+
+.box:hover{
+
+    transform:translateY(-5px);
+
+    border-color:#FFC933;
+
+}
+
+
 
 .box h3{
+
     color:#FFC933;
+
     font-size:35px;
+
 }
+
+
 
 .box p{
-    color:white;
+
+    color:#fff;
+
     margin-top:10px;
+
+    font-size:15px;
+
 }
 
-.about-content button{
-    width:180px;
+
+
+
+
+/* BUTTON */
+
+
+.about-content button,
+.download-btn{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:220px;
+
     height:55px;
 
     border:none;
-    border-radius:10px;
+
+    border-radius:12px;
 
     background:#FFC933;
+
     color:#07172D;
 
-    font-size:16px;
-    font-weight:600;
+    font-size:17px;
+
+    font-weight:700;
 
     cursor:pointer;
+
+    text-decoration:none;
+
     transition:.3s;
+
 }
 
-.about-content button:hover{
-    background:#ffd95c;
+
+
+.about-content button:hover,
+.download-btn:hover{
+
+    background:#ffb700;
+
+    transform:translateY(-3px);
+
 }
+
+
+
+
+
+/* DOWNLOAD */
+
+.download-btn{
+
+    width:260px;
+
+    height:60px;
+
+}
+
+
+
+
+
+/* ======================
+       LAPTOP
+====================== */
+
+
+@media(max-width:1200px){
+
+
+.about-container{
+
+    gap:40px;
+
+}
+
+
+
+.about-content h2{
+
+    font-size:42px;
+
+}
+
+
+}
+
+
+
+
+
+/* ======================
+       TABLET
+====================== */
+
 
 @media(max-width:992px){
 
-.about-container{
-flex-direction:column;
+
+.about{
+
+    padding:90px 0;
+
 }
+
+
+
+.about-container{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+
+
+.about-image{
+
+    width:100%;
+
+}
+
+
+
+.about-content h2{
+
+    font-size:36px;
+
+    line-height:45px;
+
+}
+
+
+
+.about-content p{
+
+    font-size:16px;
+
+}
+
+
 
 .about-boxes{
-flex-direction:column;
-}
+
+    flex-direction:row;
 
 }
+
+
+
+.about-content button,
 .download-btn{
-    display:flex;
-    justify-content:center;
-    align-items:center;
 
-    width:260px;
-    height:60px;
+    margin:auto;
 
-    background:#FFC933;
-    color:#081B33;
-
-    font-size:20px;
-    font-weight:700;
-    text-decoration:none;
-
-    border-radius:12px;
-    transition:.3s;
 }
 
-.download-btn:hover{
-    background:#ffb700;
-    transform:translateY(-3px);
+
+}
+
+
+
+
+
+/* ======================
+       MOBILE
+====================== */
+
+
+@media(max-width:768px){
+
+
+.about{
+
+    padding:70px 0;
+
+}
+
+
+
+.about-container{
+
+    width:92%;
+
+}
+
+
+
+.about-content span{
+
+    font-size:16px;
+
+}
+
+
+
+.about-content h2{
+
+    font-size:30px;
+
+    line-height:40px;
+
+}
+
+
+
+.about-content p{
+
+    line-height:28px;
+
+}
+
+
+
+.about-boxes{
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+
+
+.box{
+
+    padding:22px;
+
+}
+
+
+
+.box h3{
+
+    font-size:30px;
+
+}
+
+
+
+.about-content button,
+.download-btn{
+
+    width:100%;
+
+    max-width:300px;
+
+}
+
+
+}
+
+
+
+
+
+/* ======================
+       SMALL PHONE
+====================== */
+
+
+@media(max-width:480px){
+
+
+.about{
+
+    padding:55px 0;
+
+}
+
+
+
+.about-content h2{
+
+    font-size:26px;
+
+    line-height:36px;
+
+}
+
+
+
+.about-content p{
+
+    font-size:15px;
+
+    line-height:25px;
+
+}
+
+
+
+.box h3{
+
+    font-size:28px;
+
+}
+
+
+
+.box p{
+
+    font-size:14px;
+
+}
+
+
+
+.download-btn{
+
+    height:52px;
+
+    font-size:16px;
+
+}
+
+
 }

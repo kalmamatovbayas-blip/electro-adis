@@ -1,7 +1,7 @@
 import "./ElektroCatalog.css";
 import { Link, useOutletContext } from "react-router";
 
-import elektro from "../../assets/elektro.png";
+import elektro from "../../assets/tok.mp4";
 import gallery1 from "../../assets/gallery1.png";
 import gallery3 from "../../assets/gallery3.png";
 import gallery5 from "../../assets/gallery5.png";
@@ -29,7 +29,15 @@ const ElektroCatalog = () => {
               Кесип үйрөн — Келечегиңди бүгүн башта!
             </p>
 
-            <img src={elektro} alt="Электро Монтаж" />
+  <div className="gallery-card">
+  <video
+    controls
+    preload="metadata"
+    className="gallery-video"
+  >
+    <source src={elektro} type="video/mp4" />
+  </video>
+</div>
 
           </div>
 

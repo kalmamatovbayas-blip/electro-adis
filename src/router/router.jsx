@@ -16,7 +16,8 @@ const router = createBrowserRouter([
 			{element: <Product/>, path: 'product'},
 			{element: <ChipCatalog/>, path: 'catalog/chip'},
 			{element: <AutoCatalog/>, path: 'catalog/auto'},
-			{element: <ElektroCatalog/>, path: 'catalog/elektro'}
+			{element: <ElektroCatalog/>, path: 'catalog/elektro'},
+			
 		]
 	}
 ])

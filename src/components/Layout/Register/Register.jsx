@@ -9,7 +9,6 @@ const Register = ({ isOpen, onClose, defaultCourse }) => {
     comment: "",
   });
 
-  // defaultCourse өзгөргөн сайын select автоматтык өзгөрөт
   useEffect(() => {
     if (defaultCourse) {
       setFormData((prev) => ({

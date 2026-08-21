@@ -46,7 +46,7 @@ const Features  = () => {
           </div>
 
  <a
-  href="/files/куратор.pdf"
+  href="/files/ElectroAdis.pdf"
   target="_blank"
   rel="noopener noreferrer"
   className="download-btn"

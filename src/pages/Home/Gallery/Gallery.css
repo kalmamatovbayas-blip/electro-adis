@@ -1,156 +1,318 @@
 .gallery{
+
     background:#07172D;
+
     padding:100px 0;
+
 }
+
+
+/* TITLE */
 
 .gallery-title{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:0 auto 60px;
+
     text-align:center;
-    margin-bottom:60px;
+
 }
+
+
 
 .gallery-title h2{
+
     color:#fff;
+
     font-size:46px;
+
     margin-bottom:15px;
+
+    line-height:1.3;
+
 }
+
+
 
 .gallery-title p{
+
     color:#c6d0dd;
+
     font-size:18px;
+
 }
+
+
+
+
+
+/* GRID */
+
 
 .gallery-grid{
+
     width:90%;
+
     max-width:1300px;
+
     margin:auto;
 
+
     display:grid;
+
     grid-template-columns:repeat(3,1fr);
+
     gap:25px;
+
 }
+
+
+
+
+
+/* MEDIA */
+
 
 .gallery-grid img,
 .gallery-grid video{
+
     width:100%;
+
     height:320px;
+
     object-fit:cover;
-    border-radius:20px;
+
+    border-radius:22px;
+
     cursor:pointer;
+
     transition:.35s;
+
+    background:#102746;
+
 }
+
+
 
 .gallery-grid img:hover,
 .gallery-grid video:hover{
-    transform:scale(1.04);
+
+    transform:translateY(-8px) scale(1.02);
+
     box-shadow:0 15px 35px rgba(255,201,51,.30);
+
 }
 
-/* ==========================
-   Laptop
-========================== */
+
+
+
+
+/* ======================
+        LAPTOP
+====================== */
+
 
 @media(max-width:1200px){
 
+
 .gallery-grid{
+
     grid-template-columns:repeat(2,1fr);
-}
 
 }
 
-/* ==========================
-   Tablet
-========================== */
+
+}
+
+
+
+
+
+/* ======================
+        TABLET
+====================== */
+
 
 @media(max-width:992px){
 
+
 .gallery{
+
     padding:80px 0;
+
 }
+
+
 
 .gallery-title{
+
     margin-bottom:50px;
+
 }
+
+
 
 .gallery-title h2{
+
     font-size:38px;
+
 }
+
+
 
 .gallery-title p{
+
     font-size:17px;
+
 }
 
+
+
 .gallery-grid{
-    grid-template-columns:repeat(2,1fr);
+
     gap:20px;
+
 }
+
+
 
 .gallery-grid img,
 .gallery-grid video{
-    height:260px;
-}
+
+    height:270px;
 
 }
 
-/* ==========================
-   Mobile
-========================== */
+
+}
+
+
+
+
+
+/* ======================
+        MOBILE
+====================== */
+
 
 @media(max-width:768px){
 
+
 .gallery{
-    padding:60px 0;
+
+    padding:65px 0;
+
 }
+
+
+
+.gallery-title{
+
+    margin-bottom:40px;
+
+}
+
+
 
 .gallery-title h2{
+
     font-size:30px;
+
 }
+
+
 
 .gallery-title p{
+
     font-size:16px;
+
+    line-height:25px;
+
 }
 
+
+
 .gallery-grid{
+
+    width:92%;
+
     grid-template-columns:1fr;
+
+    gap:20px;
+
 }
+
+
 
 .gallery-grid img,
 .gallery-grid video{
-    height:230px;
-}
+
+    height:240px;
+
+    border-radius:18px;
 
 }
 
-/* ==========================
-   Small Mobile
-========================== */
+
+}
+
+
+
+
+
+/* ======================
+       SMALL PHONE
+====================== */
+
 
 @media(max-width:480px){
 
+
 .gallery{
+
     padding:50px 0;
+
 }
 
-.gallery-title{
-    margin-bottom:40px;
-}
+
 
 .gallery-title h2{
+
     font-size:26px;
+
 }
+
+
 
 .gallery-title p{
+
     font-size:14px;
+
 }
 
+
+
 .gallery-grid{
+
     width:94%;
-    gap:18px;
+
+    gap:16px;
+
 }
+
+
 
 .gallery-grid img,
 .gallery-grid video{
-    height:200px;
+
+    height:210px;
+
     border-radius:15px;
+
 }
+
 
 }

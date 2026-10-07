@@ -40,6 +40,9 @@ ${comment}
 
     const data = await response.json();
 
+    console.log("Telegram status:", response.status);
+console.log("Telegram response:", data);
+
     if (!data.ok) {
       return res.status(400).json(data);
     }
